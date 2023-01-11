@@ -9,7 +9,7 @@ from udf import get_element_value
 ## extract
 ### set up file path
 src_ds = date.today()
-src_file_name = f"""weather_raw_data_{src_ds}.csv"""
+src_file_name = f"""raw_weather_data_{src_ds}.csv"""
 src_file_path = f"""./data_bronze/{src_file_name}"""
 
 ## read csv
@@ -29,7 +29,7 @@ df_temperature = (
 
 ## load
 ### set up file path
-target_file_name = src_file_name.replace("raw_", "")
+target_file_name = src_file_name.replace("raw_", "fct_")
 target_file_path = f"""./data_silver/{target_file_name}"""
 
 # ### write data to directory

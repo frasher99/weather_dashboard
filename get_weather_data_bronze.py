@@ -46,7 +46,7 @@ df_bronze = (
 ## load
 ### set up file path
 target_ds = date.today()
-target_file_name = f"""weather_raw_data_{target_ds}.csv"""
+target_file_name = f"""raw_weather_data_{target_ds}.csv"""
 target_file_path = f"""./data_bronze/{target_file_name}"""
 
 ### write data to directory
